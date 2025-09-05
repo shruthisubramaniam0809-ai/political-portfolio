@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shruthi S - Political Leader Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e1e2f, #3a3a5d);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      perspective: 1000px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffcc00;
+      transform: rotateY(15deg);
+      transition: transform 1s;
+    }
+
+    header h1:hover {
+      transform: rotateY(0deg) scale(1.1);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 40px auto;
+      padding: 30px;
+      width: 80%;
+      max-width: 900px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
+      transform: rotateX(5deg);
+      transition: transform 0.8s ease-in-out;
+    }
+
+    .card:hover {
+      transform: rotateX(0deg) scale(1.02);
+    }
+
+    .card h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #ffcc00;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #f1f1f1;
+    }
+
+    .contact {
+      text-align: center;
+      margin: 50px 20px;
+      padding: 30px;
+    }
+
+    .contact h2 {
+      color: #ffcc00;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: #ffcc00;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(255, 204, 0, 0.6);
+    }
+
+    .contact a:hover {
+      background: #ffaa00;
+      transform: scale(1.1);
+    }
+
+    footer {
+      background: rgba(0,0,0,0.5);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shruthi S</h1>
+    <p>Political Leader | Activist | Student of AI & ML</p>
+  </header>
+
+  <section class="card">
+    <h2>About Me</h2>
+    <p>
+      I am <strong>Shruthi S</strong>, currently pursuing <strong>B.Sc. AI & ML</strong> at 
+      <strong>KPR College of Arts, Science and Research</strong>. 
+      As a passionate political leader and activist, I strive to bring innovation, awareness, 
+      and positive social change by combining leadership with technology.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Vision & Activism</h2>
+    <p>
+      My vision is to empower communities with education, equality, and technology-driven solutions. 
+      I actively participate in student leadership, political discussions, and social work initiatives 
+      to ensure that the youth voice is heard and valued in shaping the future.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Education</h2>
+    <p>
+      <strong>Department:</strong> B.Sc. AI & ML <br>
+      <strong>College:</strong> KPR College of Arts, Science and Research
+    </p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:shruthisubramaniam0809@gmail.com">shruthisubramaniam0809@gmail.com</a></p>
+  </section>
+
+  <footer>
+    © 2025 Shruthi S | Designed with passion and vision.
+  </footer>
+
+  <script>
+    // Simple floating animation for header text
+    const header = document.querySelector("header h1");
+    let angle = 0;
+    setInterval(() => {
+      angle += 2;
+      header.style.transform = `rotateY(${15 * Math.sin(angle * Math.PI / 180)}deg)`;
+    }, 100);
+  </script>
+</body>
+</html>
